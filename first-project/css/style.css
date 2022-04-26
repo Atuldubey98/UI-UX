@@ -1,0 +1,114 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*Ensures the border of the container and width suppose 500px*/
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /*removes underline from anchor tag*/
+    text-transform: capitalize;
+    /*Makes Capital letter to first letter*/
+    overflow: hidden;
+    /*Clip off extra text going out of box*/
+    scroll-behavior: smooth;
+    /*When scroolling happen should be smooth*/
+}
+
+.header {
+    position: fixed;
+    /*Makes the menu fixed if the scrolling*/
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 65px;
+    z-index: 100;
+    /*Header always raised to give 3d view*/
+}
+
+.header .nav-bar {
+    display: flex;
+    /*making it flex container will help move items inside it*/
+}
+
+.header .nav-bar a {
+    text-align: center;
+    /*Align everything to center*/
+    flex: 1;
+    /*every a tag take equal space in the flex box*/
+    font-size: 22px;
+    line-height: 65px;
+    /*Space between two lines*/
+    color: aliceblue;
+}
+
+/*Apply pseudo selector and change the brightness*/
+.header .nav-bar a:hover {
+    filter: brightness(0.8);
+}
+
+/*Apply different background color on each background item*/
+.header .nav-bar a:nth-child(1) {
+    background-color: rgb(236, 75, 75);
+}
+
+.header .nav-bar a:nth-child(2) {
+    background-color: rgb(94, 236, 75);
+}
+
+.header .nav-bar a:nth-child(3) {
+    background-color: rgb(86, 75, 236);
+}
+
+.header .nav-bar a:nth-child(4) {
+    background-color: rgb(236, 75, 129);
+}
+
+.header .nav-bar a:nth-child(5) {
+    background-color: rgb(37, 0, 250);
+}
+
+/*Style the main container body section*/
+.container{
+    display: flex;
+    width: 500%;
+    height: 100vh;/*This will occupy the full visible screen height*/
+}
+.container .main-section{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;/*Aligns items to center*/
+    justify-content: center; /*Aligns horizontally center*/
+    font-size: 8vw;/* 8 of total view width */
+    letter-spacing: 0.5px;/*Space between the letter in a word*/
+    text-transform: uppercase;
+    font-weight: bold;
+    color: azure;
+}
+.container .main-section:nth-child(1) {
+    background-color: rgb(236, 75, 75);
+}
+
+.container .main-section:nth-child(2) {
+    background-color: rgb(94, 236, 75);
+}
+
+.container .main-section:nth-child(3) {
+    background-color: rgb(86, 75, 236);
+}
+
+.container .main-section:nth-child(4) {
+    background-color: rgb(236, 75, 129);
+}
+
+.container .main-section:nth-child(5) {
+    background-color: rgb(37, 0, 250);
+}
+
+@media (max-width : 750px) {
+    .header .nav-bar a span{
+        display: none;
+    }
+}

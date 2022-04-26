@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;1,300;1,600&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    background: #eeeeee;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    padding: 22px 0px;
+    /*padding y axis 22px and x axis 0px*/
+    color: rgb(60, 60, 236);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /*Repeat each card , automatically calculate related width for each card minimum width 20 px and max width will automatically get calculated*/
+    grid-gap: 15px;
+    /*Apply 15px between the cards on each side*/
+    padding: 20px;
+}
+
+.card-container .card {
+    padding: 10px;
+    border: 3px solid rgb(60, 60, 236);
+    ;
+    text-align: center;
+    background: white;
+    box-shadow: 5px 5px rgb(60, 60, 236);
+    ;
+    border-radius: 5px;
+}
+
+.card-container .card .card-icon{
+    margin-top: 10px;
+}
+
+.card-container .card .card-icon span{
+    margin: 10px 0px;
+    font-size: 32px;
+    color: rgb(60, 60, 236);
+}
+.card-container .card .card-title{
+    color: rgb(60, 60, 236);
+    font-size: 21px;
+    margin-top: 5px;
+}
+.card-container .card p{
+    font-size: 12px;
+    color: #333333;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.card-container .card a{
+    color: rgb(60, 60, 236);
+    text-decoration: none;
+    display: block; /*making it block will make it occupy whole width*/
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.card-container .card a:hover{
+    color: rgb(104, 104, 240);
+}
