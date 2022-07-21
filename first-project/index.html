@@ -13,12 +13,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
 </head>
 
 <body>
     <header class="header">
         <nav class="nav-bar">
-            <a href="#home">
+            <a id="h" href="#home">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
@@ -47,7 +48,11 @@
         <section id="project" class="main-section">Projects</section>
         <section id="contact" class="main-section">Contact</section>
     </div>
-    
+    <script>
+        let a = 2;
+        let h = document.getElementById("h")
+        console.log(h);
+    </script>
 </body>
 
 

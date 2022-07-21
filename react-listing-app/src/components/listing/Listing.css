@@ -1,0 +1,3 @@
+.listing-section{
+    flex: 9; /*Occupy 9 of total 12 parts so that side bar can take remaining parts*/
+}
